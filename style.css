@@ -1,0 +1,161 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Oswald&display=swap");
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #151412;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Beginning of Styling */
+.container {
+  min-width: 320px;
+  height: 100vh;
+}
+
+/* Header Section */
+.header-section {
+  margin: 30px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header-section .burger-menu {
+  position: relative;
+  width: 23px;
+  height: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header-section .burger-menu:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 100%;
+  height: 4px;
+  background: #c7a17a;
+  border-radius: 1px;
+}
+
+.header-section .burger-menu > div {
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 100%;
+  height: 4px;
+  background: #c7a17a;
+  border-radius: 1px;
+}
+
+.header-section .burger-menu:after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  width: 100%;
+  height: 4px;
+  background: #c7a17a;
+  border-radius: 1px;
+}
+
+.header-section a {
+  margin: 0 auto;
+}
+
+.header-section a > img {
+  width: 155px;
+  height: 30px;
+}
+
+/* Showcase Section */
+.showcase-section {
+  height: 100vh;
+  position: relative;
+}
+
+.showcase-section .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.showcase-section .showcase-content img {
+  height: 114px;
+  width: 119px;
+  margin-bottom: 10px;
+}
+
+.showcase-section .showcase-content .slogan-1 {
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 8px 0;
+}
+
+.showcase-section .showcase-content span > i {
+  font-size: 15px;
+}
+
+.showcase-section .showcase-content .slogan-2 {
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  display: block;
+}
+
+.showcase-section .showcase-content .menu-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  line-height: 1.7em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 13px 35px;
+  border: 2px solid #fff;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+
+.showcase-section .showcase-content .menu-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Showcase Section 2 */
+.showcase-section .showcase-2-logo {
+  padding: 15px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-section .showcase-2-logo span,
+.showcase-section .showcase-2-logo i {
+  color: #c7a17a;
+}
+
+.showcase-section .showcase-2-logo .line {
+  border-top: 1px solid #c7a17a;
+  width: 7%;
+}
+
+.showcase-section .showcase-2-logo h1 {
+  text-transform: capitalize;
+  margin: 0 10px;
+}
