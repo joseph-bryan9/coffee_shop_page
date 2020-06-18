@@ -22,10 +22,15 @@
 
 /* Header Section */
 .header-section {
-  margin: 30px 8px;
+  padding: 30px 8px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 11;
 }
 
 .header-section .burger-menu {
@@ -81,6 +86,36 @@
   position: relative;
 }
 
+.showcase-section .video-container {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #151412 url("assets/home-video-img.jpg") no-repeat center
+    center/cover;
+}
+
+.showcase-section .video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-section .video-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .showcase-section .showcase-content {
   display: flex;
   flex-direction: column;
@@ -93,6 +128,9 @@
   height: 114px;
   width: 119px;
   margin-bottom: 10px;
+  background: none;
+  position: relative;
+  z-index: 10;
 }
 
 .showcase-section .showcase-content .slogan-1 {
@@ -103,6 +141,9 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 8px 0;
+  background: none;
+  position: relative;
+  z-index: 10;
 }
 
 .showcase-section .showcase-content span > i {
@@ -115,6 +156,9 @@
   font-style: italic;
   text-align: center;
   display: block;
+  background: none;
+  position: relative;
+  z-index: 10;
 }
 
 .showcase-section .showcase-content .menu-btn {
@@ -129,6 +173,9 @@
   border: 2px solid #fff;
   margin-top: 50px;
   transition: 0.5s;
+  background: none;
+  position: relative;
+  z-index: 10;
 }
 
 .showcase-section .showcase-content .menu-btn:hover {
@@ -138,7 +185,7 @@
 
 /* Showcase Section 2 */
 .showcase-section .showcase-2-logo {
-  padding: 15px 8px;
+  padding: 40px 8px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -150,6 +197,10 @@
   color: #c7a17a;
 }
 
+.showcase-section .showcase-2-logo i {
+  font-size: 38px;
+}
+
 .showcase-section .showcase-2-logo .line {
   border-top: 1px solid #c7a17a;
   width: 7%;
@@ -157,5 +208,91 @@
 
 .showcase-section .showcase-2-logo h1 {
   text-transform: capitalize;
+  font-size: 28px;
   margin: 0 10px;
+}
+
+/* Mini slideshow */
+/* Mini slideshow  container */
+.mini-slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
