@@ -12,12 +12,15 @@
   background: #151412;
   color: #fff;
   font-family: "Oswald", sans-serif;
+  line-height: 26px;
 }
 
 /* Beginning of Styling */
 .container {
   min-width: 320px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Section */
@@ -30,7 +33,7 @@
   top: 0;
   width: 100%;
   transition: top 0.3s;
-  z-index: 11;
+  z-index: 12;
 }
 
 .header-section .burger-menu {
@@ -148,6 +151,7 @@
 
 .showcase-section .showcase-content span > i {
   font-size: 15px;
+  background: none;
 }
 
 .showcase-section .showcase-content .slogan-2 {
@@ -184,7 +188,13 @@
 }
 
 /* Showcase Section 2 */
-.showcase-section .showcase-2-logo {
+.showcase-section-2 {
+  height: 215vh;
+  position: relative;
+  z-index: 11;
+}
+
+.showcase-section-2 .showcase-2-logo {
   padding: 40px 8px;
   display: flex;
   flex-direction: row;
@@ -192,21 +202,21 @@
   align-items: center;
 }
 
-.showcase-section .showcase-2-logo span,
-.showcase-section .showcase-2-logo i {
+.showcase-section-2 .showcase-2-logo span,
+.showcase-section-2 .showcase-2-logo i {
   color: #c7a17a;
 }
 
-.showcase-section .showcase-2-logo i {
+.showcase-section-2 .showcase-2-logo i {
   font-size: 38px;
 }
 
-.showcase-section .showcase-2-logo .line {
+.showcase-section-2 .showcase-2-logo .line {
   border-top: 1px solid #c7a17a;
   width: 7%;
 }
 
-.showcase-section .showcase-2-logo h1 {
+.showcase-section-2 .showcase-2-logo h1 {
   text-transform: capitalize;
   font-size: 28px;
   margin: 0 10px;
@@ -214,15 +224,27 @@
 
 /* Mini slideshow */
 /* Mini slideshow  container */
-.mini-slideshow-container {
-  max-width: 1000px;
+.showcase-section-2 .first-box,
+.showcase-section-2 .second-box,
+.showcase-section-2 .third-box {
+  padding: 20px 25px;
+}
+.showcase-section-2 .first-box .mini-slideshow-container {
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
 
 /* Hide the images by default */
-.mySlides {
+.showcase-section-2 .first-box .mini-slideshow-container .mySlides {
   display: none;
+}
+
+.showcase-section-2 .first-box .mini-slideshow-container .mySlides img {
+  width: 100%;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Next & previous buttons */
@@ -231,14 +253,15 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
+  padding: 16px 20px;
+  color: #111;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  background: none;
   user-select: none;
 }
 
@@ -251,16 +274,17 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: none;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   margin: 0 2px;
-  background-color: #bbb;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -268,7 +292,7 @@
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 /* Fading animation */
@@ -295,4 +319,159 @@
   to {
     opacity: 1;
   }
+}
+
+.showcase-section-2 .first-box h1 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+  margin: 25px 0;
+}
+
+.showcase-section-2 .first-box p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.showcase-section-2 .first-box .free-wifi {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.showcase-section-2 .second-box > img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.showcase-section-2 .second-box h1 {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.showcase-section-2 .second-box p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.7);
+  margin: 20px 0;
+  margin-bottom: 10px;
+}
+
+.showcase-section-2 .second-box p:first-child {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.showcase-section-2 .second-box a {
+  color: rgb(199, 161, 122, 0.9);
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+  line-height: 1.7em;
+}
+
+.showcase-section-2 .second-box a > i {
+  color: rgb(199, 161, 122, 0.9);
+  transition: 0.3s ease-out;
+}
+
+.showcase-section-2 .second-box a:hover > i {
+  margin-left: 5px;
+}
+
+.showcase-section-2 .third-box .opening-hours-box {
+  border: 2.5px solid #fff;
+  padding: 25px;
+  background: url("assets/schedule-bg.jpg") no-repeat center center/cover;
+}
+
+.showcase-section-2 .third-box .opening-hours-box > p {
+  background: none;
+  text-transform: uppercase;
+}
+
+.showcase-section-2 .third-box .opening-hours-box > p:first-child {
+  font-size: 22px;
+  font-weight: 900;
+  margin: 10px 0;
+  margin-bottom: 45px;
+}
+
+.showcase-section-2 .third-box .opening-hours-box > p:last-child {
+  font-size: 22px;
+  color: #c7a17a;
+  margin-top: 45px;
+}
+
+.showcase-section-2 .third-box .opening-hours-box .schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 52%);
+  background: none;
+}
+
+.showcase-section-2 .third-box .opening-hours-box .schedule-grid > div {
+  padding: 5px 0;
+  background: none;
+}
+
+.showcase-section-2 .third-box .opening-hours-box .schedule-grid > div > span {
+  text-transform: uppercase;
+  font-size: 22px;
+  background: none;
+}
+
+.showcase-section-2 .third-box .opening-hours-box .schedule-grid > div > .time {
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.showcase-section-2
+  .third-box
+  .opening-hours-box
+  .schedule-grid
+  > div
+  > .close {
+  color: #c7a17a;
+}
+
+/* Slideshow Section */
+.slideshow-section {
+  height: 100vh;
+  position: relative;
+  z-index: 11;
+  padding: 60px 0;
+}
+
+.slideshow-section .swiper-container {
+  width: 100%;
+}
+
+.slideshow-section .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.slideshow-section .swiper-container .swiper-slide > a > img {
+  width: 100%;
 }

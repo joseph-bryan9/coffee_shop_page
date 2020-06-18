@@ -13,6 +13,7 @@
       integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
   </head>
   <body>
     <div class="container">
@@ -43,7 +44,7 @@
       </section>
 
       <!-- Showcase Section 2 -->
-      <section class="showcase-section">
+      <section class="showcase-section-2">
         <div class="showcase-2-logo">
           <span class="line"></span><i class="fa fa-coffee fa-lg"></i>
           <h1>vertical cafe</h1>
@@ -78,22 +79,24 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
           </div>
 
           <div>
-            <h1>rest, relax & revive</h1>
+            <h1>rest, relax & revive!</h1>
             <p>
               At Vertical people come from all around to rest, relax and revive
               with good coffee, good company, and great food!
             </p>
-            <a href=""></a>
+            <div class="free-wifi">
+              <img src="assets/free-wifi.png" alt="" />
+            </div>
           </div>
         </div>
         <!-- Second Box -->
         <div class="second-box">
-          <img src="" alt="" />
-          <h1>did someone say "coffee"!</h1>
+          <img src="assets/someone-say-coffee.jpg" alt="" />
+          <h1>did someone say “coffee”!</h1>
           <p>
             We offer some of the best locally roasted coffee using "Brazilian
             Santos"beans. Enjoy Dark, Blonde, Jamaican, Italian & Decaf roasts.
@@ -104,7 +107,10 @@
             To see more of our coffee, specialty drinks & food menus, please
             click the link below
           </p>
-          <a href="#">click to learn more <i></i></a>
+          <a href="#"
+            >click to learn more
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
         <!-- Third Box -->
         <div class="third-box">
@@ -112,25 +118,43 @@
             <p>opening hours</p>
             <div class="schedule-grid">
               <div><span>monday</span></div>
-              <div><span>7:00 am -</span><span> 5:00 pm</span></div>
+              <div>
+                <span class="time">7:00 am -</span
+                ><span class="time"> 5:00 pm</span>
+              </div>
 
               <div><span>tuesday</span></div>
-              <div><span>7:00 am -</span><span> 5:00 pm</span></div>
+              <div>
+                <span class="time">7:00 am -</span
+                ><span class="time"> 5:00 pm</span>
+              </div>
 
               <div><span>wednesday</span></div>
-              <div><span>7:00 am -</span><span> 5:00 pm</span></div>
+              <div>
+                <span class="time">7:00 am -</span
+                ><span class="time"> 5:00 pm</span>
+              </div>
 
               <div><span>thursday</span></div>
-              <div><span>7:00 am -</span><span> 5:00 pm</span></div>
+              <div>
+                <span class="time">7:00 am -</span
+                ><span class="time"> 5:00 pm</span>
+              </div>
 
               <div><span>friday</span></div>
-              <div><span>7:00 am -</span><span> 5:00 pm</span></div>
+              <div>
+                <span class="time">7:00 am -</span
+                ><span class="time"> 5:00 pm</span>
+              </div>
 
               <div><span>saturday</span></div>
-              <div><span>8:00 am -</span><span> 2:00 pm</span></div>
+              <div>
+                <span class="time">8:00 am -</span
+                ><span class="time"> 2:00 pm</span>
+              </div>
 
               <div><span>sunday</span></div>
-              <div><span></span><span>closed</span></div>
+              <div><span></span><span class="close">closed</span></div>
             </div>
 
             <p>call:+ 1 585 786 8181</p>
@@ -141,25 +165,25 @@
       <!-- Slideshow Section -->
       <section class="slideshow-section">
         <!-- Slideshow container -->
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="img1.jpg" style="width: 100%;" />
-            <div class="text">Caption Text</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img2.jpg" style="width: 100%;" />
-            <div class="text">Caption Two</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img3.jpg" style="width: 100%;" />
-            <div class="text">Caption Three</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img3.jpg" style="width: 100%;" />
-            <div class="text">Caption Three</div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href=""><img src="assets/coffee-time.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="assets/ground-polo.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="assets/people.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="assets/food.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""
+                ><img src="assets/the-benefits-of-coffee.jpg" alt=""
+              /></a>
+            </div>
           </div>
         </div>
       </section>
@@ -384,5 +408,17 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
   </body>
 </html>
