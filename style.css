@@ -518,7 +518,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 75px;
 }
 .coffee-flavor-section .coffee-flavor > div {
   display: flex;
@@ -544,13 +544,31 @@
 
 .customer-review-section .customer-slideshow-bg-container {
   position: relative;
-  padding: 20px 25px;
+  padding: 20px 25px 30px;
   display: flex;
   flex-direction: column;
   background: url("assets/customer-says.jpg") no-repeat center center/cover;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.customer-review-section .customer-slideshow-bg-container a {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2.5px;
+  line-height: 1.7em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 25px;
+  background: none;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+
+.customer-review-section .customer-slideshow-bg-container a:hover {
+  background: #30271c;
+  border: 1px solid #30271c;
 }
 
 .customer-review-section .what-customer-say {
@@ -568,6 +586,7 @@
 
 .customer-review-section .customer-slideshow-container .swiper-container {
   background: none;
+  cursor: grab;
 }
 
 .customer-review-section
@@ -685,4 +704,84 @@
 
 .swiper-pagination-bullet-active {
   background: #c7a17a !important;
+}
+
+/* Cafe Feature Section */
+
+.cafe-feature-section {
+  height: 100vh;
+
+  position: relative;
+  z-index: 11;
+}
+
+.cafe-feature-section div:first-child {
+  padding: 80px 8px 20px;
+}
+
+.cafe-feature-section div:nth-child(2),
+.cafe-feature-section div:nth-child(3) {
+  padding: 20px 8px 20px;
+}
+
+.cafe-feature-section .open-mic,
+.cafe-feature-section .conference-room,
+.cafe-feature-section .vertical-gift-shop {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.cafe-feature-section .open-mic:hover,
+.cafe-feature-section .conference-room:hover,
+.cafe-feature-section .vertical-gift-shop:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.cafe-feature-section div > h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 25px 0;
+}
+
+.cafe-feature-section div > span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cafe-feature-section div > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255, 0.6);
+  padding-bottom: 25px;
+}
+
+.cafe-feature-section div > a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.7em;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 35px;
+  background: #c7a17a;
+  transition: 0.5s;
+}
+
+.cafe-feature-section div > a:hover {
+  background: #30271c;
+}
+
+.cafe-feature-section div > a > i {
+  background: none;
+}
+
+.cafe-feature-section div > a > i:hover {
+  background: none;
 }
