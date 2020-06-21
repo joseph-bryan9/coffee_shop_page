@@ -189,7 +189,7 @@
 
 /* Showcase Section 2 */
 .showcase-section-2 {
-  height: 215vh;
+  height: auto;
   position: relative;
   z-index: 11;
 }
@@ -227,7 +227,7 @@
 .showcase-section-2 .first-box,
 .showcase-section-2 .second-box,
 .showcase-section-2 .third-box {
-  padding: 20px 25px;
+  padding: 20px 10px;
 }
 .showcase-section-2 .first-box .mini-slideshow-container {
   max-width: 100%;
@@ -446,7 +446,7 @@
 
 /* Slideshow Section */
 .slideshow-section {
-  height: 100vh;
+  height: auto;
   position: relative;
   z-index: 11;
   padding: 60px 0;
@@ -479,7 +479,7 @@
 /* Coffee flavor Section */
 
 .coffee-flavor-section {
-  height: 315vh;
+  height: auto;
   position: relative;
   z-index: 11;
 }
@@ -537,7 +537,7 @@
 
 /* Customer review Section */
 .customer-review-section {
-  height: 100vh;
+  height: auto;
   position: relative;
   z-index: 11;
 }
@@ -709,7 +709,7 @@
 /* Cafe Feature Section */
 
 .cafe-feature-section {
-  height: 100vh;
+  height: auto;
 
   position: relative;
   z-index: 11;
@@ -784,4 +784,186 @@
 
 .cafe-feature-section div > a > i:hover {
   background: none;
+}
+
+/* Contact Section */
+/* Contact Us */
+.contact-section {
+  height: auto;
+  position: relative;
+  z-index: 11;
+  background: #212121 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 15px;
+}
+
+.contact-section * {
+  background: #212121 !important;
+}
+
+.contact-section div .contact-header {
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 35px 0;
+}
+
+.contact-section div .contact-p p {
+  color: rgb(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact-section div .contact-p p:nth-child(1) {
+  color: #fff;
+  font-weight: 900;
+}
+
+.contact-section div .contact-p a {
+  color: #c7a17a;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.contact-section div .contact-p .divider {
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  display: block;
+  width: 90%;
+  height: 5px;
+  margin: 20px 0 18px;
+}
+
+.contact-section div .contact-p img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Opening Hours */
+.contact-section .schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+  padding: 5px 0 15px;
+}
+
+.contact-section .schedule-grid .schedule-day {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.contact-section .schedule-grid .underline {
+  display: block;
+  width: 70%;
+  height: 5px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.contact-section .schedule-grid .schedule-time {
+  color: rgb(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.contact-section .schedule-grid .schedule-close {
+  color: #c7a17a;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Vertical News */
+.contact-section div:nth-child(3) .vertical-news-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section div:nth-child(3) .vertical-news-flex div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 17px;
+  width: 95%;
+}
+
+.contact-section div:nth-child(3) .vertical-news-flex div:nth-child(2) {
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.contact-section div:nth-child(3) .vertical-news-flex div a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  transition: 0.5s;
+  padding-bottom: 3px;
+}
+
+.contact-section div:nth-child(3) .vertical-news-flex div a:hover {
+  color: #c7a17a;
+}
+
+.contact-section div:nth-child(3) .vertical-news-flex div span {
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  font-size: 13px;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  color: #c7a17a;
+}
+
+/* Site links */
+.contact-section div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section div:nth-child(4) > a {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-size: 13.5px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.5s;
+  padding: 8px 0;
+}
+
+.contact-section div:nth-child(4) > div {
+  margin: 25px 0 35px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  width: 95%;
+  display: block;
+}
+
+.contact-section div:nth-child(4) > a:hover {
+  color: #c7a17a;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  padding: 20px 0;
+  z-index: 11;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+footer * {
+  background: #000;
+}
+
+footer div:nth-child(1) > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #acacac;
+}
+
+footer div:nth-child(3) > a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  color: #acacac;
+  text-decoration: none;
 }
