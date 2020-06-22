@@ -140,7 +140,8 @@
 }
 
 .showcase-section .video-container {
-  position: fixed;
+  position: absolute;
+  top: 10%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -180,7 +181,8 @@
 .showcase-section .showcase-content img {
   height: 114px;
   width: 119px;
-  margin-bottom: 10px;
+  margin-top: 120px;
+  margin-bottom: 20px;
   background: none;
   position: relative;
   z-index: 10;
@@ -225,7 +227,7 @@
   text-decoration: none;
   padding: 13px 35px;
   border: 2px solid #fff;
-  margin-top: 50px;
+  margin-top: 80px;
   transition: 0.5s;
   background: none;
   position: relative;
@@ -1122,3 +1124,72 @@ footer div:nth-child(3) > a {
   left: 80%;
   transform: translate(-80%, -95%);
 } */
+
+/* 480px Screen Size */
+@media only screen and (min-width: 480px) {
+  /* Header Section */
+  .header-section {
+    padding: 30px 80px;
+  }
+
+  /* Burger menu section / Hidden by default */
+  .burger-menu-section {
+    padding: 10px 80px 5px;
+  }
+
+  /* Showcase Section */
+  .showcase-section .showcase-content img {
+    width: 157px;
+    height: 150px;
+    margin-top: 115px;
+    margin-bottom: 30px;
+  }
+
+  .showcase-section .showcase-content .slogan-1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .showcase-section .showcase-content span > i {
+    font-size: 17px;
+  }
+
+  .showcase-section .showcase-content .slogan-2 {
+    font-size: 16px;
+  }
+
+  .showcase-section .showcase-content .menu-btn {
+    margin-top: 105px;
+    padding: 13px 40px;
+  }
+
+  /* Mini slideshow */
+  /* Mini slideshow  container */
+  .showcase-section-2 .first-box,
+  .showcase-section-2 .second-box,
+  .showcase-section-2 .third-box {
+    padding: 20px 20px;
+  }
+
+  .showcase-section-2 .third-box .opening-hours-box {
+    padding: 35px 30px 50px;
+  }
+
+  /* Slideshow Section */
+  .slideshow-section {
+    padding: 60px 0 70px;
+  }
+
+  .slideshow-section .swiper-container .swiper-slide .slide-show-text {
+    height: 98.5%;
+  }
+
+  /* Customer review Section */
+  .customer-review-section .customer-slideshow-bg-container {
+    padding: 30px 30px 35px;
+    background: url("assets/customer-says.jpg") no-repeat center center/auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
