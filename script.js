@@ -41,3 +41,10 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+/* Burger Menu toggle script */
+document
+  .querySelector(".burger-menu")
+  .addEventListener("click", () =>
+    document.querySelector(".burger-menu-section").classList.toggle("show")
+  );

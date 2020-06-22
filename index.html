@@ -14,6 +14,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -23,23 +27,45 @@
         <a href="#"><img src="assets/logo.png" alt="" /></a>
       </header>
 
+      <!-- Burger Menu Section / Hidden By Default -->
+      <section class="burger-menu-section">
+        <a href="#">home</a>
+        <div>
+          <a href="#">our menu</a
+          ><i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        <a href="#">vertical news</a>
+        <a href="#">about vertical</a>
+        <a href="#">contact us</a>
+      </section>
+
       <!-- Showcase Section -->
       <section class="showcase-section">
         <div class="video-container">
           <video src="assets/video.mp4" autoplay muted loop></video>
         </div>
         <div class="showcase-content">
-          <img src="assets/logo-2.png" alt="" />
+          <img
+            src="assets/logo-2.png"
+            class="animate__animated animate__fadeInUp"
+            alt=""
+          />
           <div>
-            <span class="slogan-1"
+            <span
+              class="slogan-1 animate__animated animate__fadeInUp animate__slow"
               >rest <i class="fa fa-coffee fa-xs" aria-hidden="true"></i> relax
               <i class="fa fa-coffee fa-xs" aria-hidden="true"></i> revive</span
             >
-            <span class="slogan-2"
+            <span
+              class="slogan-2 animate__animated animate__fadeInUp animate__slow"
               >Small town experience with BIG City Appeal!</span
             >
           </div>
-          <a href="#" class="menu-btn">see our menu</a>
+          <a
+            href="#"
+            class="menu-btn animate__animated animate__fadeInUp animate__slow"
+            >see our menu</a
+          >
         </div>
       </section>
 
@@ -168,21 +194,69 @@
         <div class="swiper-container swiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href=""><img src="assets/coffee-time.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href=""><img src="assets/ground-polo.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href=""><img src="assets/people.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href=""><img src="assets/food.jpg" alt="" /></a>
+              <a href=""
+                ><img src="assets/coffee-time.jpg" alt="" />
+                <div class="slide-show-text">
+                  <p class="animate__animated animate__fadeInUp">
+                    coffee time!
+                  </p>
+                  <p class="animate__animated animate__fadeInUp animate__slow">
+                    coffee
+                  </p>
+                </div></a
+              >
             </div>
             <div class="swiper-slide">
               <a href=""
-                ><img src="assets/the-benefits-of-coffee.jpg" alt=""
-              /></a>
+                ><img src="assets/ground-polo.jpg" alt="" />
+                <div class="slide-show-text">
+                  <p class="animate__animated animate__fadeInUp">
+                    coffee-fresh ground heaven
+                  </p>
+                  <p class="animate__animated animate__fadeInUp animate__slow">
+                    coffee
+                  </p>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a href=""
+                ><img src="assets/people.jpg" alt="" />
+                <div class="slide-show-text">
+                  <p class="animate__animated animate__fadeInUp">
+                    faces & friends
+                  </p>
+                  <p class="animate__animated animate__fadeInUp animate__slow">
+                    coffee
+                  </p>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a href=""
+                ><img src="assets/food.jpg" alt="" />
+                <div class="slide-show-text">
+                  <p class="animate__animated animate__fadeInUp">
+                    vertical food
+                  </p>
+                  <p class="animate__animated animate__fadeInUp animate__slow">
+                    cafe foods
+                  </p>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a href=""
+                ><img src="assets/the-benefits-of-coffee.jpg" alt="" />
+                <div class="slide-show-text">
+                  <p class="animate__animated animate__fadeInUp">
+                    benefits of coffee
+                  </p>
+                  <p class="animate__animated animate__fadeInUp animate__slow">
+                    coffee
+                  </p>
+                </div></a
+              >
             </div>
           </div>
         </div>
@@ -455,13 +529,16 @@
 
       <!-- Footer -->
       <footer>
-        <div><p>©2017-2020 Vertical Cafe - All rights reserved!</p></div>
-        <div>
-          <i></i>
-          <i></i>
-          <i></i>
+        <div class="flex-column">
+          <div><p>©2017-2020 Vertical Cafe - All rights reserved!</p></div>
+          <div>
+            <a href="#" class="fb-logo"></a>
+            <a href="#" class="google-logo"></a>
+            <a href="#" class="yelp-logo"></a>
+          </div>
+          <div><a href="#">Site by: DirectGlobal Web Services</a></div>
         </div>
-        <div><a href="#">Site by: DirectGlobal Web Services</a></div>
+        <!-- <a href="" class="up-btn"></a> -->
       </footer>
     </div>
 
