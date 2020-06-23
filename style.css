@@ -942,7 +942,7 @@
 .contact-section .schedule-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: end;
+  align-items: center;
   padding: 5px 0 15px;
 }
 
@@ -1125,8 +1125,8 @@ footer div:nth-child(3) > a {
   transform: translate(-80%, -95%);
 } */
 
-/* 480px Screen Size */
-@media only screen and (min-width: 480px) {
+/* 321px tp 480px  Screen Size */
+@media only screen and (min-width: 321px) {
   /* Header Section */
   .header-section {
     padding: 30px 75px;
@@ -1220,8 +1220,8 @@ footer div:nth-child(3) > a {
   }
 }
 
-/* 767px Screen Size */
-@media only screen and (min-width: 767px) {
+/* 481px to 599px Screen Size */
+@media only screen and (min-width: 481px) {
   /* Showcase Section */
   .showcase-section .showcase-content img {
     width: 35%;
@@ -1317,5 +1317,260 @@ footer div:nth-child(3) > a {
   /* Footer Section */
   footer {
     padding: 20px 0 40px;
+  }
+}
+
+/* 600px to 767px Screen Size */
+@media only screen and (min-width: 600px) {
+  /* Cafe feature Section */
+  .cafe-feature-section .open-mic,
+  .cafe-feature-section .conference-room,
+  .cafe-feature-section .vertical-gift-shop {
+    width: 90%;
+  }
+}
+
+/* 768 to 860px  Screen Size*/
+@media only screen and (min-width: 768px) {
+  /* Showcase Section */
+  .showcase-section .showcase-content img {
+    width: 30%;
+    margin-top: 65px;
+    margin-bottom: 60px;
+  }
+
+  .showcase-section .showcase-content .slogan-1 {
+    font-size: 8.5vw;
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+
+  .showcase-section .showcase-content span > i {
+    font-size: 20px;
+    top: 70%;
+    transform: translateY(-70%);
+  }
+
+  .showcase-section .showcase-content .slogan-2 {
+    font-size: 3vw;
+  }
+
+  /* Coffee flavor Section */
+  .coffee-flavor-section .coffee-flavor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 861px to 1024px Screen Size */
+@media only screen and (min-width: 768px) {
+  /* Showcase Section */
+  .showcase-section .showcase-content img {
+    width: 20%;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  .showcase-section .showcase-content .slogan-1 {
+    font-size: 8.5vw;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .showcase-section .showcase-content span > i {
+    font-size: 20px;
+    top: 70%;
+    transform: translateY(-70%);
+  }
+
+  .showcase-section .showcase-content .slogan-2 {
+    font-size: 2.5vw;
+  }
+
+  .showcase-section .showcase-content .menu-btn {
+    margin-top: 70px;
+  }
+
+  /* Showcase Section 2 */
+  .showcase-section-2 .first-box,
+  .showcase-section-2 .second-box,
+  .showcase-section-2 .third-box {
+    padding: 20px 55px;
+  }
+
+  /* Opening hours Section */
+  .showcase-section-2 .third-box .opening-hours-box .schedule-grid .left-side {
+    justify-self: start;
+  }
+
+  .showcase-section-2 .third-box .opening-hours-box .schedule-grid .right-side {
+    justify-self: end;
+    padding-right: 30px;
+  }
+
+  /* Coffee flavor Section */
+  .coffee-flavor-section .coffee-flavor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Customer review Section */
+  .customer-review-section .customer-slideshow-bg-container {
+    padding: 55px 60px 60px;
+  }
+
+  .customer-review-section .what-customer-say {
+    font-size: 40px;
+  }
+
+  /* Cafe feature Section */
+  .cafe-feature-section div:first-child {
+    padding: 80px 40px 20px;
+  }
+
+  .cafe-feature-section div:nth-child(2),
+  .cafe-feature-section div:nth-child(3) {
+    padding: 20px 40px;
+  }
+
+  .cafe-feature-section div:nth-child(3) {
+    padding-bottom: 70px;
+  }
+
+  .cafe-feature-section .open-mic,
+  .cafe-feature-section .conference-room,
+  .cafe-feature-section .vertical-gift-shop {
+    width: 65%;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr 1fr;
+    grid-gap: 20px;
+    padding: 40px 40px 70px;
+  }
+
+  .contact-section .schedule-grid {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Footer */
+  .flex-column {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  footer div:nth-child(2) {
+    margin: 0;
+  }
+}
+
+/* 1025px to 1200px Screen Size */
+@media only screen and (min-width: 1025px) {
+  /* Showcase Section */
+  .showcase-section .showcase-content img {
+    width: 20%;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  .showcase-section .showcase-content .slogan-1 {
+    font-size: 8vw;
+  }
+
+  .showcase-section .showcase-content span > i {
+    font-size: 20px;
+    top: 70%;
+    transform: translateY(-70%);
+  }
+
+  .showcase-section .showcase-content .slogan-2 {
+    font-size: 2vw;
+  }
+
+  /* Showcase Section 2 */
+  .cafe-feature-section .open-mic,
+  .cafe-feature-section .conference-room,
+  .cafe-feature-section .vertical-gift-shop {
+    width: 55%;
+  }
+}
+
+/* 1201px to 1280px Screen Size */
+@media only screen and (min-width: 1201px) {
+  /* Showcase Section */
+  .showcase-section .showcase-content img {
+    width: 15%;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  .showcase-section .showcase-content .slogan-1 {
+    font-size: 8vw;
+  }
+
+  .showcase-section .showcase-content span > i {
+    font-size: 20px;
+    top: 70%;
+    transform: translateY(-70%);
+  }
+
+  .showcase-section .showcase-content .slogan-2 {
+    font-size: 2.5vw;
+  }
+
+  /* Showcase Section 2 */
+  .showcase-section-2-three-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 45%;
+    justify-content: center;
+  }
+
+  .showcase-section-2 .first-box,
+  .showcase-section-2 .second-box,
+  .showcase-section-2 .third-box {
+    padding: 20px 45px;
+  }
+
+  .showcase-section-2 .second-box > img {
+    margin: 0;
+  }
+
+  /* Coffee flavors Section */
+  .coffee-flavor-section .coffee-flavor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 50px 75px;
+  }
+
+  /* Customer review Section */
+  .customer-review-section .customer-slideshow-bg-container {
+    padding: 85px 70px 60px;
+  }
+
+  /* Cafe feature Section */
+  .cafe-feature-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cafe-feature-section .open-mic,
+  .cafe-feature-section .conference-room,
+  .cafe-feature-section .vertical-gift-shop {
+    width: 100%;
+  }
+
+  /* .cafe-feature-section div:nth-child(1),
+  .cafe-feature-section div:nth-child(2),
+  .cafe-feature-section div:nth-child(3) {
+    padding: 0 !important;
+  } */
+
+  .cafe-feature-section div {
+    padding: 80px 40px !important;
   }
 }
