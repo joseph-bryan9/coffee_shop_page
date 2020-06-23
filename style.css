@@ -1129,7 +1129,7 @@ footer div:nth-child(3) > a {
 @media only screen and (min-width: 480px) {
   /* Header Section */
   .header-section {
-    padding: 30px 80px;
+    padding: 30px 75px;
   }
 
   /* Burger menu section / Hidden by default */
@@ -1139,14 +1139,15 @@ footer div:nth-child(3) > a {
 
   /* Showcase Section */
   .showcase-section .showcase-content img {
-    width: 157px;
-    height: 150px;
+    width: 35%;
+    height: auto;
     margin-top: 115px;
     margin-bottom: 30px;
   }
 
   .showcase-section .showcase-content .slogan-1 {
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 9vw;
     margin-bottom: 15px;
   }
 
@@ -1155,7 +1156,7 @@ footer div:nth-child(3) > a {
   }
 
   .showcase-section .showcase-content .slogan-2 {
-    font-size: 16px;
+    font-size: 3.5vw;
   }
 
   .showcase-section .showcase-content .menu-btn {
@@ -1168,11 +1169,12 @@ footer div:nth-child(3) > a {
   .showcase-section-2 .first-box,
   .showcase-section-2 .second-box,
   .showcase-section-2 .third-box {
-    padding: 20px 20px;
+    padding: 20px 75px;
   }
 
+  /* Opening hours section */
   .showcase-section-2 .third-box .opening-hours-box {
-    padding: 35px 30px 50px;
+    padding: 30px 30px;
   }
 
   /* Slideshow Section */
@@ -1184,6 +1186,20 @@ footer div:nth-child(3) > a {
     height: 98.5%;
   }
 
+  /* Cafe feature Section */
+  .cafe-feature-section div:first-child {
+    padding: 80px 75px 20px;
+  }
+
+  .cafe-feature-section div:nth-child(2),
+  .cafe-feature-section div:nth-child(3) {
+    padding: 20px 75px;
+  }
+
+  .cafe-feature-section div:nth-child(3) {
+    padding-bottom: 70px;
+  }
+
   /* Customer review Section */
   .customer-review-section .customer-slideshow-bg-container {
     padding: 30px 30px 35px;
@@ -1191,5 +1207,115 @@ footer div:nth-child(3) > a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 25px 75px 10px;
+  }
+
+  /* Footer Section */
+  footer {
+    padding: 20px 0 40px;
+  }
+}
+
+/* 767px Screen Size */
+@media only screen and (min-width: 767px) {
+  /* Showcase Section */
+  .showcase-section .showcase-content img {
+    width: 35%;
+    height: auto;
+    margin-top: 115px;
+    margin-bottom: 30px;
+  }
+
+  .showcase-section .showcase-content .slogan-1 {
+    /* font-size: 40px; */
+    font-size: 9vw;
+    margin-bottom: 15px;
+  }
+
+  .showcase-section .showcase-content span > i {
+    font-size: 17px;
+  }
+
+  .showcase-section .showcase-content .slogan-2 {
+    font-size: 3.5vw;
+  }
+
+  .showcase-section .showcase-content .menu-btn {
+    margin-top: 105px;
+    padding: 13px 40px;
+  }
+
+  /* Opening hours section */
+  .showcase-section-2 .third-box .opening-hours-box .schedule-grid > div {
+    padding: 7px 0;
+  }
+
+  .showcase-section-2 .third-box .opening-hours-box > p:last-child {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Slideshow Section */
+  .slideshow-section {
+    padding: 60px 0 70px;
+  }
+
+  .slideshow-section .swiper-container .swiper-slide .slide-show-text {
+    height: 98.5%;
+  }
+
+  /* Cafe feature Section */
+  .cafe-feature-section div:first-child {
+    padding: 80px 75px 20px;
+  }
+
+  .cafe-feature-section div:nth-child(2),
+  .cafe-feature-section div:nth-child(3) {
+    padding: 20px 75px;
+  }
+
+  .cafe-feature-section div:nth-child(3) {
+    padding-bottom: 70px;
+  }
+
+  /* Customer review Section */
+  .customer-review-section .customer-slideshow-bg-container {
+    padding: 45px 30px 60px;
+  }
+
+  .customer-review-section .customer-slideshow-bg-container a {
+    padding: 12px 25px;
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .customer-review-section .what-customer-say {
+    font-size: 30px;
+  }
+
+  /* Cafe feature Section */
+  .cafe-feature-section .open-mic,
+  .cafe-feature-section .conference-room,
+  .cafe-feature-section .vertical-gift-shop {
+    width: 85%;
+  }
+
+  .cafe-feature-section div > a {
+    padding: 17px 37px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 25px 75px 10px;
+  }
+
+  /* Footer Section */
+  footer {
+    padding: 20px 0 40px;
   }
 }
