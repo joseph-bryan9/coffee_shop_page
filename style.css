@@ -83,6 +83,11 @@
   height: 30px;
 }
 
+/* Header Section for 1025px up - Hidden By Default */
+.header-section-2 {
+  display: none;
+}
+
 /* Burger menu section / Hidden by default */
 .burger-menu-section {
   display: flex;
@@ -1254,6 +1259,10 @@ footer div:nth-child(3) > a {
     padding: 7px 0;
   }
 
+  .showcase-section-2 .showcase-2-logo .line {
+    width: 10%;
+  }
+
   .showcase-section-2 .third-box .opening-hours-box > p:last-child {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -1353,6 +1362,11 @@ footer div:nth-child(3) > a {
 
   .showcase-section .showcase-content .slogan-2 {
     font-size: 3vw;
+  }
+
+  /* Opening hours Section  */
+  .showcase-section-2 .showcase-2-logo .line {
+    width: 18%;
   }
 
   /* Coffee flavor Section */
@@ -1491,6 +1505,10 @@ footer div:nth-child(3) > a {
   }
 
   /* Showcase Section 2 */
+  .showcase-section-2 .showcase-2-logo .line {
+    width: 20%;
+  }
+
   .cafe-feature-section .open-mic,
   .cafe-feature-section .conference-room,
   .cafe-feature-section .vertical-gift-shop {
@@ -1500,6 +1518,159 @@ footer div:nth-child(3) > a {
 
 /* 1201px to 1280px Screen Size */
 @media only screen and (min-width: 1201px) {
+  /* Header Section for mobile/tablet */
+  .header-section {
+    display: none;
+  }
+
+  /* Header Section for 1025px up - Hidden By Default */
+  .header-section-2 {
+    display: block;
+  }
+
+  /* div 1 */
+  .header-section-2 .header-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .header-section-2 .header-1 div {
+    padding: 0 5px;
+  }
+
+  .header-section-2 .header-1 div:nth-child(1) > span,
+  .header-section-2 .header-1 div:nth-child(2) > a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+  }
+
+  .header-section-2 .header-1 div:nth-child(1) > span {
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+  }
+
+  .header-section-2 .header-1 div:nth-child(2) > a {
+    text-decoration: none;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+  }
+
+  .header-section-2 .header-1 div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-section-2 .header-1 div:nth-child(3) > a {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
+      brightness(105%) contrast(102%);
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+
+  .header-section-2 .header-1 div:nth-child(3) > a:hover {
+    filter: invert(70%) sepia(30%) saturate(420%) hue-rotate(349deg)
+      brightness(90%) contrast(89%);
+  }
+
+  .header-section-2 .header-1 div:nth-child(3) .fb-logo {
+    background: url("assets/facebook.svg");
+    background-size: contain;
+  }
+
+  .header-section-2 .header-1 div:nth-child(3) .google-logo {
+    background: url("assets/google.svg");
+    background-size: contain;
+    width: 23px !important;
+    height: 23px !important;
+  }
+
+  .header-section-2 .header-1 div:nth-child(3) .yelp-logo {
+    background: url("assets/yelp.svg");
+    background-size: contain;
+  }
+
+  /* div 2 */
+  .header-section-2 .header-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .header-section-2 .header-2 div i {
+    margin-right: 8px;
+    transition: 0.3s;
+  }
+
+  .header-section-2 .header-2 div > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+    transition: 0.3s;
+  }
+
+  .header-section-2 .header-2 div > a:hover > .fa-search {
+    transition: 0.3s;
+  }
+
+  .header-section-2 .header-2 div > a:hover,
+  .header-section-2 .header-2 div > a:hover > i {
+    color: #c7a17a;
+  }
+
+  .header-section-2 .header-2 div > a:hover > .fa-search {
+    color: rgb(255, 255, 255, 0.7);
+  }
+
+  /* div 2 burger-menu-2 */
+  .header-section-2 .flex .burger-menu-2 {
+    position: relative;
+    width: 23px;
+    height: 30px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .header-section-2 .flex .burger-menu-2:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 4px;
+    background: #c7a17a;
+    border-radius: 1px;
+  }
+
+  .header-section-2 .flex .burger-menu-2 > div {
+    content: "";
+    position: absolute;
+    top: 12px;
+    width: 100%;
+    height: 4px;
+    background: #c7a17a;
+    border-radius: 1px;
+  }
+
+  .header-section-2 .flex .burger-menu-2:after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    height: 4px;
+    background: #c7a17a;
+    border-radius: 1px;
+  }
+
   /* Showcase Section */
   .showcase-section .showcase-content img {
     width: 15%;
@@ -1552,10 +1723,8 @@ footer div:nth-child(3) > a {
 
   /* Cafe feature Section */
   .cafe-feature-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .cafe-feature-section .open-mic,
@@ -1572,5 +1741,61 @@ footer div:nth-child(3) > a {
 
   .cafe-feature-section div {
     padding: 80px 40px !important;
+  }
+}
+
+/* 1281px to 1480px Screen Size */
+@media only screen and (min-width: 1281px) {
+  /* Showcase Section */
+  .showcase-section .showcase-content img {
+    width: 201px;
+    height: 203px;
+  }
+
+  .showcase-section .showcase-content .slogan-1 {
+    font-size: 90px;
+  }
+
+  .showcase-section .showcase-content span > i {
+    font-size: 20px;
+    top: 100%;
+    transform: translateY(-100%);
+    position: relative;
+  }
+
+  .showcase-section .showcase-content .slogan-2 {
+    font-size: 32px;
+  }
+
+  .showcase-section-2 .showcase-2-logo .line {
+    width: 20%;
+  }
+
+  /* Showcase Section 2 */
+  .showcase-section-2 .showcase-2-logo .line {
+    width: 23%;
+  }
+
+  .showcase-section-2-three-column {
+    padding: 0 35px;
+  }
+
+  /* Coffee flavors Section */
+  .coffee-flavor-section .coffee-flavor {
+    padding: 0 50px 85px;
+  }
+
+  /* Cafe feature Section */
+  .cafe-feature-section {
+    padding: 20px 35px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 40px 90px 70px;
+  }
+
+  .contact-section .schedule-grid .underline {
+    width: 90%;
   }
 }
