@@ -10,6 +10,22 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
+/* Header-2 Sticky navbar */
+window.onscroll = function () {
+  stickyHeader2();
+};
+
+var navbar = document.querySelector(".header-2");
+var sticky = navbar.offsetTop;
+
+function stickyHeader2() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 /* Mini Slideshow Script */
 var slideIndex = 1;
 showSlides(slideIndex);

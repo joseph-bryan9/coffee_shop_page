@@ -1603,7 +1603,7 @@ footer div:nth-child(3) > a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0 5px;
+    padding: 10px 0 5px;
     width: 100%;
   }
 
@@ -1645,7 +1645,7 @@ footer div:nth-child(3) > a {
     color: rgb(255, 255, 255, 0.7);
   }
 
-  /* div 2 burger-menu-2 */
+  /* div 2 burger-menu-2 style */
   .header-section-2 .flex {
     display: flex;
     flex-direction: row;
@@ -1692,6 +1692,18 @@ footer div:nth-child(3) > a {
     height: 2px;
     background: #fff;
     border-radius: 1px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 13;
+    transition: 0.5s;
+  }
+
+  .sticky + .showcase-section {
+    padding-top: 102px;
   }
 
   /* Showcase Section */
