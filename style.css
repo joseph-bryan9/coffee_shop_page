@@ -1706,6 +1706,87 @@ footer div:nth-child(3) > a {
     padding-top: 102px;
   }
 
+  /* Side Menu Section for 1025px up / Hidden By Default */
+  .side-menu-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 25%;
+    z-index: 11;
+    background: #eae7de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-menu-section * {
+    background: #eae7de;
+  }
+
+  .side-menu-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .side-menu-section div:nth-child(1) > a > img {
+    width: 50%;
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .side-menu-section div:nth-child(2) > p {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+  }
+
+  .side-menu-section div:nth-child(2) > p > strong,
+  strong {
+    text-transform: capitalize;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+  }
+
+  .side-menu-section div:nth-child(3) > a {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    filter: invert(76%) sepia(36%) saturate(374%) hue-rotate(348deg)
+      brightness(83%) contrast(86%);
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+
+  .side-menu-section div:nth-child(3) > a:hover {
+    filter: invert(0%) sepia(8%) saturate(7469%) hue-rotate(355deg)
+      brightness(90%) contrast(110%);
+  }
+
+  .side-menu-section div:nth-child(3) .ig-logo {
+    background: url("assets/ig.svg");
+    background-size: contain;
+  }
+
+  .side-menu-section div:nth-child(3) .fb-logo {
+    background: url("assets/facebook.svg");
+    background-size: contain;
+  }
+
+  .side-menu-section div:nth-child(3) .twitter-logo {
+    background: url("assets/twitter.svg");
+    background-size: contain;
+  }
+
+  .side-menu-section div:nth-child(3) .tumblr-logo {
+    background: url("assets/tumblr.svg");
+    background-size: contain;
+  }
+
   /* Showcase Section */
   .showcase-section .showcase-content img {
     width: 15%;
