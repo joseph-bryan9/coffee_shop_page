@@ -18,7 +18,7 @@
 /* Beginning of Styling */
 .container {
   min-width: 320px;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -651,9 +651,9 @@
   display: flex;
   flex-direction: column;
   background: url("assets/customer-says.jpg") no-repeat center center/cover;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .customer-review-section .customer-slideshow-bg-container a {
@@ -1114,21 +1114,10 @@ footer div:nth-child(3) > a {
   text-decoration: none;
 }
 
-/* footer .up-btn {
-  background: url("assets/up-arrow.svg") no-repeat;
-  background-size: contain;
-  filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
-    brightness(105%) contrast(102%);
-  background: #c7a17a;
-  position: fixed;
-  padding: 10px;
-  z-index: 11;
-  width: 18px;
-  height: 18px;
-  top: 95%;
-  left: 80%;
-  transform: translate(-80%, -95%);
-} */
+/* Side Menu Section for 1025px up / Hidden By Default */
+.side-menu-section {
+  display: none;
+}
 
 /* 321px tp 480px  Screen Size */
 @media only screen and (min-width: 321px) {
@@ -1208,10 +1197,10 @@ footer div:nth-child(3) > a {
   /* Customer review Section */
   .customer-review-section .customer-slideshow-bg-container {
     padding: 30px 30px 35px;
-    background: url("assets/customer-says.jpg") no-repeat center center/auto;
-    top: 50%;
+    background: url("assets/customer-says.jpg") no-repeat center center/cover;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
   }
 
   /* Contact Section */
@@ -1518,6 +1507,18 @@ footer div:nth-child(3) > a {
 
 /* 1201px to 1280px Screen Size */
 @media only screen and (min-width: 1201px) {
+  /* container */
+  .container {
+    transition: 0.5s;
+    position: relative;
+    z-index: 13;
+  }
+
+  .container.active {
+    transform: translateX(-20%);
+    transition: 0.5s;
+  }
+
   /* Header Section for mobile/tablet */
   .header-section {
     display: none;
@@ -1526,6 +1527,8 @@ footer div:nth-child(3) > a {
   /* Header Section for 1025px up - Hidden By Default */
   .header-section-2 {
     display: block;
+    position: relative;
+    z-index: 13;
   }
 
   /* div 1 */
@@ -1696,9 +1699,8 @@ footer div:nth-child(3) > a {
 
   .sticky {
     position: fixed;
+    display: block;
     top: 0;
-    width: 100%;
-    z-index: 13;
     transition: 0.5s;
   }
 
@@ -1710,32 +1712,65 @@ footer div:nth-child(3) > a {
   .side-menu-section {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -14.5%;
     height: 100vh;
     width: 25%;
-    z-index: 11;
+    z-index: 10;
     background: #eae7de;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 55px;
+    transition: 0.5s;
+  }
+
+  .side-menu-section.active {
+    right: 0;
+    position: fixed;
+    z-index: 13;
+    transition: 0.5s;
   }
 
   .side-menu-section * {
     background: #eae7de;
   }
 
-  .side-menu-section div {
+  .side-menu-section div:nth-child(1),
+  .side-menu-section div:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
   }
 
+  .side-menu-section div:nth-child(1) > a {
+    display: block;
+    text-align: center;
+  }
+
   .side-menu-section div:nth-child(1) > a > img {
     width: 50%;
     height: auto;
-    display: block;
-    text-align: center;
+  }
+
+  .side-menu-section div:nth-child(1) .close-btn {
+    cursor: pointer;
+    display: inline-block;
+    text-align: right;
+  }
+
+  .side-menu-section div:nth-child(1) .close-btn .fa-times {
+    transform: rotate(-90deg);
+    transition: 0.5s;
+  }
+
+  .side-menu-section div:nth-child(1) .close-btn:hover .fa-times {
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+
+  .side-menu-section div:nth-child(1) .close-btn > i {
+    color: #9d9d9d;
   }
 
   .side-menu-section div:nth-child(2) > p {
@@ -1743,18 +1778,23 @@ footer div:nth-child(3) > a {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
     color: #333;
+    margin: 20px 0 0;
   }
 
   .side-menu-section div:nth-child(2) > p > strong,
   strong {
-    text-transform: capitalize;
+    text-align: center;
     font-family: "Open Sans", sans-serif;
     color: #333;
   }
 
+  .side-menu-section div:nth-child(3) {
+    margin-top: 25px;
+  }
+
   .side-menu-section div:nth-child(3) > a {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
     filter: invert(76%) sepia(36%) saturate(374%) hue-rotate(348deg)
       brightness(83%) contrast(86%);

@@ -64,3 +64,20 @@ document
   .addEventListener("click", () =>
     document.querySelector(".burger-menu-section").classList.toggle("show")
   );
+
+/* Side Menu toggle script*/
+function sideMenuToggle() {
+  var container = document.querySelector(".container");
+  var sideMenu = document.querySelector(".side-menu-section");
+  var navbar = document.querySelector(".header-2");
+  var sticky = navbar.offsetTop;
+
+  container.classList.toggle("active");
+  sideMenu.classList.toggle("active");
+
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
