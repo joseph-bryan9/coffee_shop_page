@@ -650,10 +650,11 @@
   padding: 20px 25px 30px;
   display: flex;
   flex-direction: column;
-  background: url("assets/customer-says.jpg") no-repeat center center/cover;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  background: url("assets/customer-says.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .customer-review-section .customer-slideshow-bg-container a {
@@ -1123,7 +1124,7 @@ footer div:nth-child(3) > a {
 @media only screen and (min-width: 321px) {
   /* Header Section */
   .header-section {
-    padding: 30px 75px;
+    padding: 30px 20px;
   }
 
   /* Burger menu section / Hidden by default */
@@ -1140,7 +1141,6 @@ footer div:nth-child(3) > a {
   }
 
   .showcase-section .showcase-content .slogan-1 {
-    /* font-size: 40px; */
     font-size: 9vw;
     margin-bottom: 15px;
   }
@@ -1163,7 +1163,7 @@ footer div:nth-child(3) > a {
   .showcase-section-2 .first-box,
   .showcase-section-2 .second-box,
   .showcase-section-2 .third-box {
-    padding: 20px 75px;
+    padding: 20px 20px;
   }
 
   /* Opening hours section */
@@ -1187,7 +1187,7 @@ footer div:nth-child(3) > a {
 
   .cafe-feature-section div:nth-child(2),
   .cafe-feature-section div:nth-child(3) {
-    padding: 20px 75px;
+    padding: 20px 20px;
   }
 
   .cafe-feature-section div:nth-child(3) {
@@ -1197,15 +1197,16 @@ footer div:nth-child(3) > a {
   /* Customer review Section */
   .customer-review-section .customer-slideshow-bg-container {
     padding: 30px 30px 35px;
-    background: url("assets/customer-says.jpg") no-repeat center center/cover;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    background: url("assets/customer-says.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   /* Contact Section */
   .contact-section {
-    padding: 25px 75px 10px;
+    padding: 25px 20px 10px;
   }
 
   /* Footer Section */
@@ -1366,7 +1367,7 @@ footer div:nth-child(3) > a {
 }
 
 /* 861px to 1024px Screen Size */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 861px) {
   /* Showcase Section */
   .showcase-section .showcase-content img {
     width: 20%;
