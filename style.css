@@ -1117,7 +1117,10 @@ footer div:nth-child(3) > a {
 
 /* Side Menu Section for 1025px up / Hidden By Default */
 .side-menu-section {
-  display: none;
+  right: 0;
+  position: fixed;
+  z-index: 13;
+  transition: 0.5s;
 }
 
 /* 321px tp 480px  Screen Size */

@@ -8,12 +8,13 @@ window.onscroll = function () {
     document.querySelector(".header-section").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
+  stickyHeader2();
 };
 
 /* Header-2 Sticky navbar */
-window.onscroll = function () {
-  stickyHeader2();
-};
+// window.onscroll = function () {
+//   stickyHeader2();
+// };
 
 var navbar = document.querySelector(".header-2");
 var sticky = navbar.offsetTop;
