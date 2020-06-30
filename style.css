@@ -100,6 +100,7 @@
   width: 100%;
   transform: translateY(-500px);
   transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
 }
 
 .burger-menu-section a {
@@ -136,6 +137,7 @@
 
 .burger-menu-section.show {
   transform: translateY(95px);
+  position: fixed;
 }
 
 /* Showcase Section */
@@ -1762,7 +1764,6 @@ footer div:nth-child(3) > a {
 
   .sticky {
     position: fixed;
-    display: block;
     top: 0;
     transition: 0.5s;
   }
@@ -1786,6 +1787,11 @@ footer div:nth-child(3) > a {
     padding: 40px 55px;
     transition: 0.5s;
   }
+
+  /* .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  } */
 
   .side-menu-section.active {
     right: 0;

@@ -6,6 +6,7 @@ window.onscroll = function () {
     document.querySelector(".header-section").style.top = "0";
   } else {
     document.querySelector(".header-section").style.top = "-100px";
+    document.querySelector(".burger-menu-section").classList.remove("show");
   }
   prevScrollpos = currentScrollPos;
   stickyHeader2();
@@ -67,7 +68,17 @@ document
 function sideMenuToggle() {
   var container = document.querySelector(".container");
   var sideMenu = document.querySelector(".side-menu-section");
+  var burgerMenu2 = document.querySelector(".burger-menu-2");
 
   container.classList.toggle("active");
   sideMenu.classList.toggle("active");
+  burgerMenu2.classList.toggle("active");
+  // document.body.classList.add("stop-scrolling");
 }
+
+// document
+//   .querySelector(".burger-menu-2")
+//   .addEventListener("click", () =>
+//     document.querySelector(".side-menu-section").classList.toggle("active")
+//   ),
+//   document.querySelector(".container").classList.toggle("active");
