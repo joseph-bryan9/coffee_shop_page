@@ -141,6 +141,28 @@
               <div class="mySlides fade">
                 <img src="assets/mini-slideshow/4.jpg" />
               </div>
+              <!-- Swiper -->
+              <!-- <div class="swiper-container mini-slideshow">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/mini-slideshow/1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/mini-slideshow/2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/mini-slideshow/3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/mini-slideshow/4.jpg" />
+                </div>
+              </div> -->
+              <!-- Add Pagination -->
+              <!-- <div class="swiper-pagination mini-slideshow-pagination"></div> -->
+              <!-- Add Arrows -->
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+              <!-- </div> -->
 
               <!-- Next and previous buttons -->
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -625,11 +647,30 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
+      var swiper = new Swiper(".mini-slideshow", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".mini-slideshow-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
       var swiper = new Swiper(".swiper1", {
         spaceBetween: 30,
         loop: true,
         autoplay: {
-          delay: 4500,
+          delay: 3500,
           disableOnInteraction: false,
         },
         breakpoints: {

@@ -9,13 +9,10 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
   stickyHeader2();
+  //See stickyHeader2() function code at /* Header-2 Sticky Navbar */
 };
 
 /* Header-2 Sticky navbar */
-// window.onscroll = function () {
-//   stickyHeader2();
-// };
-
 var navbar = document.querySelector(".header-2");
 var sticky = navbar.offsetTop;
 
