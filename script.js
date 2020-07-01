@@ -76,6 +76,40 @@ function sideMenuToggle() {
   // document.body.classList.add("stop-scrolling");
 }
 
+/* Up Button Script */
+
+var scrollBtn = document.querySelector(".up-btn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+
+var scrollBtn = document.querySelector(".up-btn");
+
+window,
+  addEventListener("scroll", () => {
+    if (window.pageYOffset > 430) {
+      scrollBtn.classList.add("active");
+    } else {
+      scrollBtn.classList.remove("active");
+    }
+  });
+
+// window.onscroll = function () {
+//   scrollFunction();
+// };
+
+// function scrollFunction() {
+//   if (
+//     document.body.scrollTop > 430 ||
+//     document.documentElement.scrollTop > 430
+//   ) {
+//     scrollBtn.style.display = "block";
+//   } else {
+//     scrollBtn.style.display = "none";
+//   }
+// }
+
+/* Up Button Toggle Script */
+
 // document
 //   .querySelector(".burger-menu-2")
 //   .addEventListener("click", () =>

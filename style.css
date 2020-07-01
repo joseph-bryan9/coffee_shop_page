@@ -1176,6 +1176,74 @@ footer div:nth-child(3) > a {
   text-decoration: none;
 }
 
+footer .up-btn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  right: 30px;
+  bottom: 40px;
+  position: fixed;
+  /* filter: invert(91%) sepia(99%) saturate(5928%) hue-rotate(297deg)
+    brightness(84%) contrast(83%); */
+  background: #c7a17a;
+  transition: 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+footer .up-btn.active {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  right: 30px;
+  bottom: 40px;
+  position: fixed;
+  pointer-events: auto;
+  opacity: 1;
+  /* filter: invert(91%) sepia(99%) saturate(5928%) hue-rotate(297deg)
+    brightness(84%) contrast(83%); */
+}
+
+footer .up-btn:hover {
+  /* filter: invert(44%) sepia(6%) saturate(3397%) hue-rotate(349deg)
+    brightness(102%) contrast(95%); */
+  background: #9a6e41;
+}
+
+footer a .up-logo {
+  background: url("assets/up-arrow.svg") no-repeat center center/contain;
+  height: 16px;
+  width: 16px;
+  display: block;
+  margin: 5px auto;
+  filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(130deg)
+    brightness(105%) contrast(101%);
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+/* .header-section-2 .header-1 div:nth-child(3) > a {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
+    brightness(105%) contrast(102%);
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.header-section-2 .header-1 div:nth-child(3) > a:hover {
+  filter: invert(70%) sepia(30%) saturate(420%) hue-rotate(349deg)
+    brightness(90%) contrast(89%);
+}
+
+.header-section-2 .header-1 div:nth-child(3) .fb-logo {
+  background: url("assets/facebook.svg");
+  background-size: contain;
+} */
+
 /* Side Menu Section for 1025px up / Hidden By Default */
 .side-menu-section {
   right: 0;
@@ -1246,7 +1314,7 @@ footer div:nth-child(3) > a {
 
   /* Cafe feature Section */
   .cafe-feature-section div:first-child {
-    padding: 80px 75px 20px;
+    padding: 80px 20px 20px;
   }
 
   .cafe-feature-section div:nth-child(2),
@@ -1484,11 +1552,20 @@ footer div:nth-child(3) > a {
 
   /* Customer review Section */
   .customer-review-section .customer-slideshow-bg-container {
-    padding: 55px 60px 60px;
+    padding: 80px 70px 60px;
   }
 
   .customer-review-section .what-customer-say {
     font-size: 40px;
+    margin-left: 5%;
+  }
+
+  .customer-review-section
+    .customer-slideshow-container
+    .swiper-container
+    .swiper-slide
+    .text {
+    width: 90%;
   }
 
   /* Cafe feature Section */
@@ -1943,7 +2020,19 @@ footer div:nth-child(3) > a {
 
   /* Customer review Section */
   .customer-review-section .customer-slideshow-bg-container {
-    padding: 85px 70px 60px;
+    padding: 85px 95px 60px;
+  }
+
+  .customer-review-section .what-customer-say {
+    margin-left: 10%;
+  }
+
+  .customer-review-section
+    .customer-slideshow-container
+    .swiper-container
+    .swiper-slide
+    .text {
+    width: 80%;
   }
 
   /* Cafe feature Section */
@@ -2022,5 +2111,20 @@ footer div:nth-child(3) > a {
 
   .contact-section .schedule-grid .underline {
     width: 90%;
+  }
+}
+
+/* 1450px upwards Screen Size */
+@media only screen and (min-width: 1450px) {
+  .customer-review-section .what-customer-say {
+    margin-left: 20%;
+  }
+
+  .customer-review-section
+    .customer-slideshow-container
+    .swiper-container
+    .swiper-slide
+    .text {
+    width: 900px;
   }
 }

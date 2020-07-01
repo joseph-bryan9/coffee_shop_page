@@ -611,7 +611,7 @@
           </div>
           <div><a href="#">Site by: DirectGlobal Web Services</a></div>
         </div>
-        <!-- <a href="" class="up-btn"></a> -->
+        <a href="#" class="up-btn"><i class="up-logo"></i></a>
       </footer>
     </div>
 
@@ -646,25 +646,7 @@
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mini-slideshow", {
-        spaceBetween: 30,
-        effect: "fade",
-        loop: true,
-        autoplay: {
-          delay: 4500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".mini-slideshow-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
       var swiper = new Swiper(".swiper1", {
         spaceBetween: 30,
@@ -702,6 +684,10 @@
           el: ".swiper-pagination2",
           clickable: true,
         },
+      });
+
+      var scroll = new SmoothScroll(".up-btn ", {
+        speed: 400,
       });
     </script>
   </body>
