@@ -1677,10 +1677,35 @@ footer a .up-logo {
     width: 20%;
   }
 
+  .showcase-section-2 .first-box,
+  .showcase-section-2 .second-box,
+  .showcase-section-2 .third-box {
+    padding: 20px 90px;
+  }
+
+  /* Cafe Feature Section */
   .cafe-feature-section .open-mic,
   .cafe-feature-section .conference-room,
   .cafe-feature-section .vertical-gift-shop {
     width: 55%;
+  }
+
+  .cafe-feature-section div:first-child {
+    padding: 80px 90px 20px;
+  }
+
+  .cafe-feature-section div:nth-child(2),
+  .cafe-feature-section div:nth-child(3) {
+    padding: 20px 90px;
+  }
+
+  .cafe-feature-section div:nth-child(3) {
+    padding-bottom: 70px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 40px 90px 70px;
   }
 }
 
@@ -1837,8 +1862,11 @@ footer a .up-logo {
   }
 
   .header-2 .dropdown .dropdown-content {
-    display: none;
+    opacity: 0;
     position: absolute;
+    padding: 23px 0 0;
+    width: 220%;
+    transition: 0.3s;
   }
 
   .header-2 .dropdown .dropbtn {
@@ -1847,12 +1875,19 @@ footer a .up-logo {
 
   .header-2 .dropdown .dropdown-content a {
     display: block;
+    padding: 10px 20px;
+    font-weight: normal;
+  }
+
+  .header-2 .dropdown .dropdown-content a:first-child {
+    border-top: 2px solid #c7a17a;
   }
 
   .dropdown:hover .dropdown-content {
-    display: block;
-    padding: 15px;
+    opacity: 1;
+    padding: 23px 0 0;
     width: 220%;
+    transition: 0.7s ease-in-out;
   }
 
   /* Header 2 Sticky Burger Menu */
@@ -1931,11 +1966,6 @@ footer a .up-logo {
     padding: 40px 55px;
     transition: 0.5s;
   }
-
-  /* .stop-scrolling {
-    height: 100%;
-    overflow: hidden;
-  } */
 
   .side-menu-section.active {
     right: 0;
@@ -2071,7 +2101,7 @@ footer a .up-logo {
   .showcase-section-2 .first-box,
   .showcase-section-2 .second-box,
   .showcase-section-2 .third-box {
-    padding: 20px 45px;
+    padding: 20px 90px;
   }
 
   .showcase-section-2 .second-box > img {
@@ -2114,14 +2144,21 @@ footer a .up-logo {
     width: 100%;
   }
 
-  /* .cafe-feature-section div:nth-child(1),
-  .cafe-feature-section div:nth-child(2),
-  .cafe-feature-section div:nth-child(3) {
-    padding: 0 !important;
-  } */
-
   .cafe-feature-section div {
     padding: 80px 40px !important;
+  }
+
+  .cafe-feature-section div:first-child {
+    padding: 80px 90px 20px;
+  }
+
+  .cafe-feature-section div:nth-child(2),
+  .cafe-feature-section div:nth-child(3) {
+    padding: 20px 90px;
+  }
+
+  .cafe-feature-section div:nth-child(3) {
+    padding-bottom: 70px;
   }
 }
 
@@ -2169,6 +2206,19 @@ footer a .up-logo {
   /* Cafe feature Section */
   .cafe-feature-section {
     padding: 20px 35px;
+  }
+
+  .cafe-feature-section div:first-child {
+    padding: 80px 90px 20px;
+  }
+
+  .cafe-feature-section div:nth-child(2),
+  .cafe-feature-section div:nth-child(3) {
+    padding: 20px 90px;
+  }
+
+  .cafe-feature-section div:nth-child(3) {
+    padding-bottom: 70px;
   }
 
   /* Contact Section */
