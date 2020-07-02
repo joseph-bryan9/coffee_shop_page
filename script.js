@@ -68,12 +68,9 @@ document
 function sideMenuToggle() {
   var container = document.querySelector(".container");
   var sideMenu = document.querySelector(".side-menu-section");
-  var burgerMenu2 = document.querySelector(".burger-menu-2");
 
   container.classList.toggle("active");
   sideMenu.classList.toggle("active");
-  burgerMenu2.classList.toggle("active");
-  // document.body.classList.add("stop-scrolling");
 }
 
 /* Up Button Script */
