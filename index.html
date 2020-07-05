@@ -99,12 +99,17 @@
       <section class="showcase-section">
         <div class="video-container">
           <video
-            src="/assets/video.mp4"
+            id="video"
+            poster="assets/vid-bg.jpg"
             autoplay
             muted
             loop
             playsinline
-          ></video>
+          >
+            <source src="/assets/video.mp4" type="video/mp4" />
+          </video>
+          <!-- <div class="img-bg"></div> -->
+          <!-- <img class="video-bg" src="assets/video.gif" alt="" /> -->
         </div>
         <div class="showcase-content">
           <img
