@@ -1,3 +1,22 @@
+// /* Loading before video background displays*/
+/* Will UNCOMMENT after checking */
+// var loader = document.querySelector(".img-bg");
+// var videoBg = document.querySelector(".video-bg");
+
+// function load() {
+//   setTimeout(() => {
+//     loader.style.opacity = 0;
+//     loader.style.display = "none";
+
+//     videoBg.style.display = "block";
+//     videoBg.style.opacity = 1;
+//   }, 12000);
+// }
+
+// if (window.matchMedia("(max-width: 1200px)")) {
+//   load();
+// }
+
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -74,11 +93,9 @@ function sideMenuToggle() {
 }
 
 /* Up Button Script */
-
 var scrollBtn = document.querySelector(".up-btn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-
 var scrollBtn = document.querySelector(".up-btn");
 
 window,
