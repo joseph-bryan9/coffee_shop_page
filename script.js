@@ -1,21 +1,23 @@
+/* HAHAHHA */
+
 // /* Loading before video background displays*/
 /* Will UNCOMMENT after checking */
-// var loader = document.querySelector(".img-bg");
-// var videoBg = document.querySelector(".video-bg");
+var loader = document.querySelector(".img-bg");
+var videoBg = document.querySelector(".video-bg");
 
-// function load() {
-//   setTimeout(() => {
-//     loader.style.opacity = 0;
-//     loader.style.display = "none";
+function load() {
+  setTimeout(() => {
+    loader.style.opacity = 0;
+    loader.style.display = "none";
 
-//     videoBg.style.display = "block";
-//     videoBg.style.opacity = 1;
-//   }, 12000);
-// }
+    videoBg.style.display = "block";
+    videoBg.style.opacity = 1;
+  }, 12000);
+}
 
-// if (window.matchMedia("(max-width: 1200px)")) {
-//   load();
-// }
+if (window.matchMedia("(max-width: 1200px)")) {
+  load();
+}
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
