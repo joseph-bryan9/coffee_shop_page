@@ -172,7 +172,6 @@
   position: relative;
 }
 
-/* HAHAHAHHAHA */
 .showcase-section .video-container,
 .showcase-section .video-container .img-bg {
   position: absolute;
@@ -196,12 +195,10 @@
     center/cover;
 }
 
-/* HAHAHAHHAHA */
 .showcase-section .video-container video {
   display: none;
 }
 
-/* HAHAHAHHAHA */
 .showcase-section .video-container video,
 .showcase-section .video-container .video-bg {
   min-width: 100%;
@@ -223,7 +220,6 @@
   transform: translate(-50%, -50%);
 }
 
-/* HAHAHAHHAHA */
 .showcase-section .video-container .video-bg {
   opacity: 0;
   display: none;
@@ -578,8 +574,8 @@
   width: 100%;
 }
 
+/* Center slide text vertically */
 .slideshow-section .swiper-slide {
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -798,48 +794,6 @@
   padding: 20px 0;
 }
 
-/* .customer-review-section
-  .customer-slideshow-container
-  .swiper-slide:nth-child(1) {
-  height: 268px;
-  line-height: 268px;
-}
-
-.customer-review-section
-  .customer-slideshow-container
-  .swiper-slide:nth-child(2) {
-  height: 303px;
-  line-height: 303px;
-}
-
-.customer-review-section
-  .customer-slideshow-container
-  .swiper-slide:nth-child(3) {
-  height: 303px;
-  line-height: 303px;
-}
-
-.customer-review-section
-  .customer-slideshow-container
-  .swiper-slide:nth-child(4) {
-  height: 583px;
-  line-height: 583px;
-}
-
-.customer-review-section
-  .customer-slideshow-container
-  .swiper-slide:nth-child(5) {
-  height: 513px;
-  line-height: 513px;
-}
-
-.customer-review-section
-  .customer-slideshow-container
-  .swiper-slide:nth-child(6) {
-  height: 513px;
-  line-height: 513px;
-} */
-
 .customer-review-section
   .customer-slideshow-container
   .swiper-container
@@ -890,7 +844,6 @@
 }
 
 /* Cafe Feature Section */
-
 .cafe-feature-section {
   height: auto;
 
@@ -1238,6 +1191,7 @@ footer a .up-logo {
   position: fixed;
   z-index: 13;
   transition: 0.5s;
+  display: none;
 }
 
 /* 321px tp 480px  Screen Size */
@@ -1346,7 +1300,6 @@ footer a .up-logo {
   }
 
   .showcase-section .showcase-content .slogan-1 {
-    /* font-size: 40px; */
     font-size: 9vw;
     margin-bottom: 15px;
   }

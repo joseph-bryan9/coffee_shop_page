@@ -1,7 +1,4 @@
-/* HAHAHHA */
-
-// /* Loading before video background displays*/
-/* Will UNCOMMENT after checking */
+/* Loading before video background displays*/
 var loader = document.querySelector(".img-bg");
 var videoBg = document.querySelector(".video-bg");
 
@@ -108,27 +105,3 @@ window,
       scrollBtn.classList.remove("active");
     }
   });
-
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-
-// function scrollFunction() {
-//   if (
-//     document.body.scrollTop > 430 ||
-//     document.documentElement.scrollTop > 430
-//   ) {
-//     scrollBtn.style.display = "block";
-//   } else {
-//     scrollBtn.style.display = "none";
-//   }
-// }
-
-/* Up Button Toggle Script */
-
-// document
-//   .querySelector(".burger-menu-2")
-//   .addEventListener("click", () =>
-//     document.querySelector(".side-menu-section").classList.toggle("active")
-//   ),
-//   document.querySelector(".container").classList.toggle("active");
