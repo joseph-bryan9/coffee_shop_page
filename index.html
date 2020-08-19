@@ -118,7 +118,11 @@
             loop
             playsinline
           >
-            <source src="/assets/video.mp4" type="video/mp4" />
+            <source
+              type="video/mp4"
+              data-src="/assets/video.mp4"
+              src="javascript:void(0);"
+            />
           </video>
           <div class="img-bg"></div>
           <img class="video-bg" src="assets/video.gif" alt="" />
@@ -682,7 +686,8 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> -->
+    <script src="smoothscroll.min.js"></script>
     <script>
       var swiper = new Swiper(".swiper1", {
         spaceBetween: 30,
@@ -722,8 +727,22 @@
         },
       });
 
-      var scroll = new SmoothScroll(".up-btn ", {
-        speed: 400,
+      //var scroll = new SmoothScroll(".up-btn ", {
+      //speed: 400,
+      //});
+    </script>
+    <script>
+      // add event listener on load
+      window.addEventListener("load", function () {
+        // scroll to top
+        document
+          .querySelector(".up-btn")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            document
+              .querySelector(".container")
+              .scrollIntoView({ behavior: "smooth" });
+          });
       });
     </script>
   </body>
