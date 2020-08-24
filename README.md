@@ -9,7 +9,5 @@ This is a sample webpage design (replica) showcasing Vertical Cafe's famous coff
 ## Versioning
 This webpage design was recreated from their June 2020 website design.
 
-![June 2020 Website Version](https://gdurl.com/kKLQ)
-
 ## Acknowledgement
 I would like to thank Vertical Cafe for giving me the inspiration to recreate their remarkable website.
