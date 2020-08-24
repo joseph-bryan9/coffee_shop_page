@@ -7,7 +7,7 @@ This is a sample webpage design (replica) showcasing Vertical Cafe's famous coff
 * Javascript
 
 ## Versioning
-This webpage design was recreated from their June 2020 website design.
+June 2020 version.
 
 ## Acknowledgement
 I would like to thank Vertical Cafe for giving me the inspiration to recreate their remarkable website.
