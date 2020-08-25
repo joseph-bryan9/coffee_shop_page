@@ -6,7 +6,7 @@ This is a sample webpage design (replica) showcasing Vertical Cafe's famous coff
 
 - CSS
 - HTML
-- Javascript
+- Vanilla Javascript
 
 ## Versioning
 
