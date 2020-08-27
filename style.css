@@ -2131,3 +2131,30 @@ footer a .up-logo {
     padding: 40px 15% 70px;
   }
 }
+
+/* 2304px upwards Screen Size */
+@media only screen and (min-width: 2304px) {
+  /* Header Section */
+  .header-section-2 .header-1 {
+    padding: 30px 20px;
+  }
+
+  .header-section-2 .header-1 div:nth-child(3) > a {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-section-2 .header-1 div:nth-child(1) > span,
+  .header-section-2 .header-1 div:nth-child(2) > a {
+    font-size: 20px;
+  }
+
+  .header-2 {
+    padding: 20px 0 15px;
+  }
+
+  .header-2 div > a,
+  .header-2 .dropdown .dropbtn {
+    font-size: 24px;
+  }
+}
