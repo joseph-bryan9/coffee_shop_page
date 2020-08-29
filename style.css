@@ -2157,4 +2157,17 @@ footer a .up-logo {
   .header-2 .dropdown .dropbtn {
     font-size: 24px;
   }
+
+  .header-2 div > a {
+    letter-spacing: 3px;
+  }
+
+  /* Showcase Section */
+  .showcase-section .showcase-content .menu-btn {
+    font-size: 20px;
+  }
+
+  .showcase-section-2 .showcase-2-logo h1 {
+    font-size: 32px;
+  }
 }
