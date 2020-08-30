@@ -2164,10 +2164,55 @@ footer a .up-logo {
 
   /* Showcase Section */
   .showcase-section .showcase-content .menu-btn {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .showcase-section-2 .showcase-2-logo h1 {
     font-size: 32px;
+  }
+
+  .showcase-section-2 .first-box,
+  .showcase-section-2 .second-box,
+  .showcase-section-2 .third-box {
+    padding: 20px 30px;
+  }
+
+  .showcase-section-2 .first-box p,
+  .showcase-section-2 .second-box p,
+  .showcase-section-2 .second-box a {
+    font-size: 16px;
+  }
+
+  /* Slideshow Section */
+  .slideshow-section
+    .swiper-container
+    .swiper-slide
+    .slide-show-text
+    > div
+    > p:first-child {
+    font-size: 24px;
+  }
+
+  .slideshow-section
+    .swiper-container
+    .swiper-slide
+    .slide-show-text
+    > div
+    > p:last-child {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .slideshow-section .swiper-container .swiper-slide .slide-show-text > div {
+    height: 100%;
+  }
+
+  /* Coffee flavor Section */
+  .coffee-flavor-section span:nth-child(1) {
+    font-size: 24px;
+  }
+
+  .coffee-flavor-section h1 {
+    font-size: 36px;
   }
 }
